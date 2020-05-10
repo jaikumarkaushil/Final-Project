@@ -13,7 +13,8 @@ module.exports = function(grunt){
 		sass: {
 			dist: {
 				files: {
-					'css/styles.css': 'css/styles.scss'
+					'css/style3.css': 'css/style3.scss',
+                    'css/custom.css': 'css/custom.scss'
 				}
 			}
 		},
@@ -81,7 +82,7 @@ module.exports = function(grunt){
         useminPrepare: {
             foo: {    									//foo is a random name you can give anything in place of this.
                 dest: 'dist',							// destination folder where task has to be implemented
-                src: ['contactus.html','aboutus.html','index.html']                         //source
+                src: ['articles.html','Issuesandtheirsolutions.html','index.html', 'dashboard.html']                         //source
             },
             options: {
                 flow: {
@@ -136,7 +137,7 @@ module.exports = function(grunt){
         // options.assetDirs contains the directories for finding the assets
         // according to their relative paths
         usemin: {
-            html: ['dist/contactus.html','dist/aboutus.html','dist/index.html'],
+            html: ['dist/articles.html','dist/Issuesandtheirsolutions.html','dist/index.html', 'dist/dashboard.html'],
             options: {
                 assetsDirs: ['dist', 'dist/css','dist/js']
             }
@@ -149,8 +150,9 @@ module.exports = function(grunt){
                 },
                 files: {                                   // Dictionary of files
                     'dist/index.html': 'dist/index.html',  // 'destination': 'source'
-                    'dist/contactus.html': 'dist/contactus.html',
-                    'dist/aboutus.html': 'dist/aboutus.html',
+                    'dist/articles.html': 'dist/articles.html',
+                    'dist/Issuesandtheirsolutions.html': 'dist/Issuesandtheirsolutions.html',
+                    'dist/dashboard.html': 'dist/dashboard.html',
                 }
             }
         }

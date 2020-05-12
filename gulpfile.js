@@ -80,18 +80,17 @@ gulp.task('copyfonts', function() {
 gulp.task('imagemin', function() {
   return gulp.src('img/*.{png,jpg,gif}')
         // Images
-    .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-    // .pipe(imagemin([
-    //   imagemin.gifsicle({interlaced: true}),
-    //   imagemin.mozjpeg({quality: 75, progressive: true}),
-    //   imagemin.optipng({optimizationLevel: 5}),
-    //   imagemin.svgo({
-    //       plugins: [
-    //           {removeViewBox: true},
-    //           {cleanupIDs: false}
-    //       ]
-    //   })
-    // ]))
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.mozjpeg({quality: 75, progressive: true}),
+      imagemin.optipng({optimizationLevel: 5}),
+      imagemin.svgo({
+          plugins: [
+              {removeViewBox: true},
+              {cleanupIDs: false}
+          ]
+      })
+    ]))
     .pipe(gulp.dest('dist/img'));
 });
 

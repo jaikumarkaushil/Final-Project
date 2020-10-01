@@ -1,0 +1,59 @@
+nav .navbar-brand {
+  font-family: "Monotype Corsiva";
+  font-size:  1.8rem;
+  display:  flex;
+  justify-content: center;    
+ }
+.navbar {
+    overflow: hidden;
+    position:absolute;
+    top:0px;
+    font-size: calc(0.8rem + 0.6vw);
+    z-index:2;
+    width:100%;
+    padding: 15px;
+    background: rgba(0,0,0,0); 
+}
+.nav-item {
+  display: flex;
+  justify-content: center;
+}
+.navbar:hover {
+  background: rgba(0,0,0,0.4);
+  }
+#FeedbackForm {
+  color: floralwhite;
+}
+#FeedbackModal .modal-title {
+  
+  max-width:350px;
+  width: 100%;
+  margin: auto; 
+}
+#FeedbackModal .modal-header button {
+  margin-left:-16px;
+  }
+  
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #8990ff;
+  border-radius: 20px;
+}
+.nav-link.active {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #2d6898;
+  text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+  box-shadow: 3px 3px 3px 3px rgba(137, 196, 244, 5);
+}
+.nav-pills .nav-link.active:hover{
+  background-color: #757dff;
+}
+
+a {
+  color: #00a000; }
+
+a:hover {
+  color: #008000;
+  text-decoration: none; }

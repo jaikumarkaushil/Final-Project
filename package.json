@@ -56,7 +56,7 @@
     "onchange": "^6.1.0",
     "parallelshell": "^3.0.2",
     "rimraf": "^3.0.2",
-    "swiper": "^5.3.8",
+    "swiper": "^6.5.1",
     "time-grunt": "^2.0.0",
     "uglifyjs": "^2.4.11",
     "usemin-cli": "^0.6.0"
